@@ -36,19 +36,8 @@ IMG_SIZE = 96
 AVAILABLE_MODELS = {
     "Best: He + BatchNorm (69.3%)":      "reg_He_BN_best.keras",
     "Deep CNN":                          "deep_CNN_best.keras",
-    "He + Dropout + Aug":                "reg_He_BN_Drop_Aug_best.keras",
-    "He baseline":                       "reg_He_baseline_best.keras",
-    "Glorot baseline":                   "reg_Glorot_baseline_best.keras",
     "CNN baseline":                      "CNN_baseline_best.keras",
-    "MLP baseline":                      "MLP_baseline_best.keras",
-    "Activation: ELU":                   "act_ELU_best.keras",
-    "Activation: ReLU":                  "act_ReLU_best.keras",
-    "Activation: LeakyReLU":             "act_LeakyReLU_best.keras",
-    "Activation: Swish":                 "act_Swish_best.keras",
-    "Optimizer: Adam":                   "opt_Adam_best.keras",
-    "Optimizer: RMSprop":                "opt_RMSprop_best.keras",
-    "Optimizer: SGD":                    "opt_SGD_best.keras",
-    "Optimizer: SGD + Momentum":         "opt_SGD_momentum_best.keras",
+    "Glorot baseline":                   "reg_Glorot_baseline_best.keras",
 }
 
 DEFAULT_MODEL_LABEL = "Best: He + BatchNorm (69.3%)"

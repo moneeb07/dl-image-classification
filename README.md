@@ -10,11 +10,12 @@ using a CNN trained from scratch (He uniform initialization + Batch Normalizatio
 
 ## Live demo
 
-Once deployed on Streamlit Community Cloud, the app will be available at:
+https://dl-image-classification.streamlit.app/
 
-```
-https://<your-app-name>.streamlit.app
-```
+## Paper & docs
+
+The full report and supporting documentation for this project live in this Drive folder:
+https://drive.google.com/drive/folders/1RxZE2aUj7tWyYoDrxX_z1rbaoJj9xTJA?usp=sharing
 
 ## Classes
 

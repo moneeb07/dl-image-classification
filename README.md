@@ -1,4 +1,4 @@
-# STL-10 Image Classification — Streamlit Demo
+# STL-10 Image Classification: Streamlit Demo
 
 A Streamlit web app that classifies 96×96 images into one of 10 STL-10 categories
 using a CNN trained from scratch (He uniform initialization + Batch Normalization).
@@ -43,12 +43,12 @@ full comparison.
 
 ## Features
 
-- **Predict tab** — upload an image, get the top-1 class plus full probability bars over all 10 classes.
-- **Project Charts tab** — view every figure from the experimental study (optimizer comparison,
+- **Predict tab**: upload an image, get the top-1 class plus full probability bars over all 10 classes.
+- **Project Charts tab**: view every figure from the experimental study (optimizer comparison,
   activation comparison, ablation study, confusion matrix, overfitting analysis, etc.).
-- **Model switcher** — sidebar dropdown to try any of the 15 trained models if their
+- **Model switcher**: sidebar dropdown to try any of the 15 trained models if their
   `.keras` files are placed in `models/`.
-- **About tab** — project context and pipeline summary.
+- **About tab**: project context and pipeline summary.
 
 ---
 
@@ -79,7 +79,7 @@ python get_test_images.py
 ```
 
 > `tensorflow-datasets` is **not** in `requirements.txt` because the deployed
-> app doesn't need it — it's only used by this helper.
+> app doesn't need it, it's only used by this helper.
 
 ---
 
@@ -140,12 +140,12 @@ STL-10 test images reproduce the reported 69.3% test accuracy.
 
 ## Limitations
 
-- **Training set was small** (5,000 images, 500 per class) — model plateaus at
+- **Training set was small** (5,000 images, 500 per class), so the model plateaus at
   ~69% from scratch. Errors concentrate on visually similar classes
   (cat/dog/monkey, car/truck/ship).
-- **Distribution shift** — STL-10 photos are tightly cropped on the subject.
+- **Distribution shift**: STL-10 photos are tightly cropped on the subject.
   Wide-angle phone shots or cluttered backgrounds will get lower confidence.
-- **No GPU at inference** — `tensorflow-cpu` is used. A single prediction takes
+- **No GPU at inference**: `tensorflow-cpu` is used. A single prediction takes
   ~100 ms on a modest cloud instance.
 
 See `plots/confusion_matrix.png` and `plots/overfitting_analysis.png` for the
@@ -155,4 +155,4 @@ full error analysis.
 
 ## License
 
-Academic project — released as-is for educational purposes.
+Academic project, released as-is for educational purposes.

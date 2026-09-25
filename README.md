@@ -70,8 +70,8 @@ Open the URL Streamlit prints (default `http://localhost:8501`).
 ### Optional: get real STL-10 test images
 
 `get_test_images.py` downloads STL-10 via TensorFlow Datasets and saves a few
-test images per class into `test_images/<class_name>/` so you can verify the
-model works on its true distribution.
+test images per class into `test_images/<class_name>/`, useful for verifying the
+model against its true distribution.
 
 ```bash
 pip install tensorflow-datasets
@@ -83,20 +83,13 @@ python get_test_images.py
 
 ---
 
-## Deploy to Streamlit Community Cloud
+## Deployment
 
-1. Push this repo to GitHub (already done if you're reading this on GitHub).
-2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
-3. Click **"New app"** → select this repository → branch `main` → main file `app.py`.
-4. Click **Deploy**. First build takes a few minutes (TensorFlow installation).
-5. The model file `models/reg_He_BN_best.keras` (1.2 MB) is committed to the repo,
-   so no extra setup is needed.
-
-### Build tips
-
-- Streamlit Cloud's default Python (3.11) works fine.
-- Memory: the `tensorflow-cpu` runtime + this model fits comfortably within the
-  1 GB limit of the free tier.
+The live demo is hosted on Streamlit Community Cloud, built directly from the `main`
+branch (`app.py`). The best model file, `models/reg_He_BN_best.keras` (1.2 MB), is
+committed to the repo, so the build needs no extra setup beyond `requirements.txt`.
+It runs on Streamlit Cloud's default Python 3.11, and the `tensorflow-cpu` runtime
+plus this model fit comfortably within the 1 GB memory limit of the free tier.
 
 ---
 
